@@ -12,6 +12,9 @@ module.exports = {
   output: {
     filename: 'js-zip.min.js',
     path: path.resolve(__dirname, 'dist'),
+    library: 'JsZip',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
