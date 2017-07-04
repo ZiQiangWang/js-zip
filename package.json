@@ -1,0 +1,35 @@
+{
+  "name": "js-zip",
+  "version": "1.0.0",
+  "description": "Implement zip function of python",
+  "main": "index.js",
+  "scripts": {
+    "test": " npm run lint && jest",
+    "lint": "eslint src && eslint __tests__",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiQiangWang/js-zip.git"
+  },
+  "keywords": [
+    "js",
+    "zip",
+    "python",
+    "matrix"
+  ],
+  "author": "ZiQiangWang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZiQiangWang/js-zip/issues"
+  },
+  "homepage": "https://github.com/ZiQiangWang/js-zip#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.1.1",
+    "jest": "^20.0.4",
+    "webpack": "^3.0.0"
+  }
+}
