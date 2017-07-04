@@ -4,9 +4,10 @@
   "description": "Implement zip function of python",
   "main": "index.js",
   "scripts": {
-    "test": " npm run lint && jest",
+    "test": " npm run lint && jest --coverage",
     "lint": "eslint src && eslint __tests__",
-    "build": "webpack"
+    "build": "webpack && npm run test",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "babel-loader": "^7.1.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "coveralls": "^2.13.1",
     "eslint": "^4.1.1",
     "jest": "^20.0.4",
     "webpack": "^3.0.0"
