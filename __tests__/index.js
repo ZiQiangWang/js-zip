@@ -66,7 +66,7 @@ describe('Testcases of js-zip', () => {
     const a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     expect(JsZip(...a)).toEqual([ [ 1, 4, 7 ], [ 2, 5, 8 ], [ 3, 6, 9 ] ]);
   });
-  describe('8.Uniterable input', () => {
+  describe('9.Uniterable input', () => {
     test('a.Number input', () => {
       expect(JsZip.bind(null, 1)).toThrow(/must support iteration/);
     });
@@ -78,6 +78,10 @@ describe('Testcases of js-zip', () => {
     });
     test('d.Bool input', () => {
       expect(JsZip.bind(null,true)).toThrow(/must support iteration/);
+    });
+    test('e.Object input', () => {
+      const a = [{a:1, b:2, c:3}, {d:4, e:5, f:6}, {x:7, y:8, z:9}];
+      expect(JsZip.bind(null,...a)).toThrow(/must support iteration/);
     });
   });
 });
