@@ -1,6 +1,6 @@
 {
   "name": "js-zip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implement zip function of python",
   "main": "dist/js-zip.min.js",
   "scripts": {
