@@ -2,7 +2,7 @@
   "name": "js-zip",
   "version": "1.0.0",
   "description": "Implement zip function of python",
-  "main": "index.js",
+  "main": "dist/js-zip.min.js",
   "scripts": {
     "test": " npm run lint && jest --coverage",
     "lint": "eslint src && eslint __tests__",
